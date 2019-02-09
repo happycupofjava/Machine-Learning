@@ -1,0 +1,15 @@
+The algorithm implementation will require two files:
+1)A .csv file that has all the instances which are to be used; the data collected.
+2)A .names file that has all the features for which the data was collected for each instance of the mushroom.
+
+################################################################################################################
+
+Where to specify the path of the two files:
+a)for .csv: specify the path in the variable mushroom_instances
+example: mushroom_instances = 'C:\Users\Sudip\Downloads\mushrooms.csv'
+b)for the .names: specify the path in the variable mushroom_features
+example: mushroom_features = 'C:\Users\Sudip\Documents\Vru\Machine Learning\mushrooms.names'
+
+################################################################################################################
+
+As per discussed in class, the instances that had "?" values for the #11 attribute feature were removed.
