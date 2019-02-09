@@ -1,0 +1,19 @@
+IMPLEMENTATION OF NAÏVE BAYES ON MUSHROOM DATA
+
+STEPS FOLLOWED:
+
+STEP1: Convert the dataset into frequency table, download and load the data. Convert the data set into a frequency table. The data is loaded without headers using a function make_dataset() in the implementation. Using for loops, data is separated into two dataset; training dataset(4000) and testing dataset(1644). Calculate the amount of edible mushroom instances and poisonous mushroom instances in the dataset. These are further divided into the test dataset.
+
+STEP2: The features of the mushrooms are mapped into a dictonarylist and it is calculated for both edible mushrooms as well as poisonous mushrooms. This is fed in the training data for the algorithm to understand the feature set for edible or poisonous mushrooms and how to differentiate them.
+
+STEP3: The list of features is read as a separate file and mapped to the datasets having instances using the function mapping_features(). The features are then separated and fed to a dictionary.
+
+STEP4:This step includes calculating the posterior probabilities to implement the NAÏVE BAYES formula;
+
+STEP5:The function naïve_bayes() calculates the probabilities for the mushroom instances to be either edible or poisonous, it maintains the counter and applying an if loop to either categorize it as edible or poisonous mushroom.
+
+STEP6:The final step consists of the main(), it calls the functions to prepare the datasets, mapping the features and creating the dictionary for the features then it calculates the number of edible and poisonous mushrooms for calculating the classes for the instances in the test dataset. The accuracy of the algorithm is calculated.
+
+OUTPUT:
+The output displays the total instances used; 5644, the number of edible mushroom instances;3488 and poisonous mushroom instances; 2156 in the entire mushroom dataset.
+The last line gives the percent accuracy of the algorithm and the number of training dataset and testing dataset. A graphical representation of the number of edible and poisonous instances is also displayed abo
