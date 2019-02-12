@@ -1,0 +1,14 @@
+The path for the .csv file is stored in the variable "file" that was passed to the function prepare_data().
+File used: https://archive.ics.uci.edu/ml/datasets/glass+identification
+
+
+###################################################################################################################
+
+The range of the features is hard coded on line 20 of the code, any changes in the csv file will require a change in the value that is passed in the range(). The value for the range() will be the total number of features for each instance.
+
+example: line #20 "for y in range(11):"
+
+
+###################################################################################################################
+
+The value for K is hard coded in this program which is 4. The regression function inclueds predictions for the target value based on 4 nearest neighbor.
